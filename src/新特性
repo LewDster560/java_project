@@ -1,0 +1,63 @@
+jdk8
+1	Lambda 表达式
+2	方法引用
+3	函数式接口
+4	默认方法
+5	Stream
+6	ptional 类
+7	Nashorn, JavaScript 引擎
+8	新的日期时间 API
+9	Base64
+==============================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+jdk5
+1、泛型 Generics:
+2、枚举类型 Enumeration:
+3、自动装箱拆箱（自动类型包装和解包）
+4、可变参数varargs(varargs number of arguments)
+5、Annotations 它是java中的metadata
+6、新的迭代语句（for(int n:numbers)）
+7、静态导入（import static ）
+8、新的格式化方法（java.util.Formatter）
+9、新的线程模型和并发库Thread Framework
+
+
+jdk6
+1、引入了一个支持脚本引擎的新框架
+2、UI的增强
+3、对WebService支持的增强（JAX-WS2.0和JAXB2.0）
+4、一系列新的安全相关的增强
+5、JDBC4.0
+6、Compiler API
+7、通用的Annotations支持
+
+jdk7
+1、switch中可以使用字串了
+
+
+

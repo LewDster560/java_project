@@ -1,0 +1,37 @@
+https://blog.csdn.net/54powerman/article/details/78091989?locationNum=10&fps=1
+
+
+编译：
+javac -d classes src/**.java
+tree .
+打包jar并执行
+
+mkdir lib
+jar cvf lib/demo.jar -C classes .
+ava --class-path lib/demo.jar com.test.Demo(X)
+java -cp lib/demo.jar com.test.Demo
+
+创建模块
+module-info.java（在最顶层）
+命名为hello
+
+编译模块
+javac -d classes src/**.java
+
+打包模块
+jar cvf lib/hello.jar -C classes .
+jar tf lib/hello.jar
+
+
+
+运行模块
+java --module-path lib -m hello/com.test.Demo
+java -p lib -m hello/com.test.Demo
+java9的jar提供了一个create开关，用这种方式打包，可以为module指定主类
+jar --create --file lib/lib.jar --main-class com.test.Demo -C classes .
+(
+Error occurred during initialization of boot layer
+ java.lang.module.FindException: Two versions of module hello found in lib (lib.jar and hello.jar)
+ 删了hello.jar
+ )
+ java -p lib -m hello
